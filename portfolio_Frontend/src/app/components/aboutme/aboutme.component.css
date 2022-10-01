@@ -1,0 +1,15 @@
+div{
+    background-color: black;
+    text-align: center;
+    color:#FF8C00;
+}
+/*nombre completo*/
+#nombre{
+    font-weight: bold;
+    padding-top: 15px;    
+    font-size: 30px;
+}
+/*foto de perfil*/
+#profilepic{
+
+}

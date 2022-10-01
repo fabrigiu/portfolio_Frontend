@@ -24,10 +24,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "portfolio_Frontend/node_modules/bootstrap/dist/css/bootstrap.css"
+              "../portfolio_Frontend/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
-              "portfolio_Frontend/node_modules/bootstrap/dist/js/bootstrap.js"
+              "../portfolio_Frontend/node_modules/bootstrap/dist/js/bootstrap.js"
             ]
             
           },
@@ -96,7 +96,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           }
         }
       }
