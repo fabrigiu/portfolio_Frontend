@@ -9,7 +9,18 @@ div{
     padding-top: 15px;    
     font-size: 30px;
 }
-/*foto de perfil*/
-#profilepic{
+#title{
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (min-width:576px){
 
+    #profilepic{
+        position: absolute;
+        width: 15%;
+        box-shadow: 3px 3px 3px black;
+        left: 1%;
+        top: 550px;
+        height: 225px;
+    }
 }
