@@ -1,3 +1,9 @@
 img{
     width: 35px;
 }
+#social{
+    position:absolute;
+    right: 0;
+    margin-top: 5px;
+    padding-right: 10px;
+}

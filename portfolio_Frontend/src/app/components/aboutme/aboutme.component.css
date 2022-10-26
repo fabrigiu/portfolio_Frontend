@@ -1,26 +1,33 @@
-div{
-    background-color: black;
+.heading{
+    position:relative;
+    color: #74808a;
     text-align: center;
-    color:#FF8C00;
+    font-size:2em;
+    font-weight:300;
+    margin:0 0 30px 0;
 }
-/*nombre completo*/
-#nombre{
-    font-weight: bold;
-    padding-top: 15px;    
-    font-size: 30px;
+.heading:after{
+    position:absolute;
+    content:'';
+    top:100%;
+    height:1px;
+    width:50px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    background:#74808a;
 }
-#title{
-    font-size: 20px;
-    font-weight: bold;
-}
-@media (min-width:576px){
 
-    #profilepic{
-        position: absolute;
-        width: 15%;
-        box-shadow: 3px 3px 3px black;
-        left: 1%;
-        top: 550px;
-        height: 225px;
-    }
+#about{
+    padding:75px 15px;
+    border-bottom:1px solid #dcd9d9;
+}
+
+#about h2{
+    color:#374054;
+}
+
+#about p{
+    color:#74808a;
+    margin:0;
 }

@@ -1,3 +1,6 @@
 #logoAP {
     width: 150px;
+    position:absolute;
+    left: 0;
+    margin-top: 5px;
 }

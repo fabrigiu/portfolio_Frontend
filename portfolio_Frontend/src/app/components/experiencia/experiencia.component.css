@@ -1,6 +1,6 @@
 .heading{
     position:relative;
-    color: #FF8C00;
+    color: #74808a;
     text-align: center;
     font-size:2em;
     font-weight:300;
@@ -15,15 +15,23 @@
     left: 0;
     right:0;
     margin:0 auto;
-    background:#FF8C00}
+    background:#74808a}
 
+#experience{
+    padding:10%;
+    text-align:center;
+    border-bottom:1px solid #dcd9d9;
+}
+#experience h2{
+    color:#374054;
+}
 
 #experience-timeline>div{
     text-align: center;
-    background:rgb(226, 220, 212);
+    background:#fff;
     padding:10px;
     margin-bottom:10px;
-    border:1px solid #ffd900;
+    border:1px solid #dcd9d9;
     }
 #experience-timeline>div h3{
     font-size:1.5em;
@@ -43,9 +51,10 @@
     font-size:0.9em;
     margin:0;
     }
-#experience-timeline:before,
-#experience-timeline:after{content:none}
+#experience-timeline:before,#experience-timeline:after{
+    content:none;
+}
 
 .background-alt{
-    background:black;
-    }
+    background:#f2f2f5;
+}
