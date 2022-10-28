@@ -31,3 +31,11 @@
     color:#74808a;
     margin:0;
 }
+@media only screen and (max-width: 992px){
+    #about{
+        text-align:center;
+    }
+    #about p{
+        text-align:left;
+    }
+}

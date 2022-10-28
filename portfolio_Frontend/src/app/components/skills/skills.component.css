@@ -1,3 +1,4 @@
+
 .heading{
     position:relative;
     color: #74808a;
@@ -37,11 +38,11 @@
     margin:7px;
     padding:5px 10px;
     color:#374054;
-    background:#e4e4ea;
+    background:#fafafa;
     list-style:none;
     cursor:default;
     font-size:1.2em;
 }
-.background-alt{
-    background:#f2f2f5;
+#iconid{
+    background: #374054;
 }

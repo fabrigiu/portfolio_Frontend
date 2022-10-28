@@ -2,35 +2,88 @@
     <div id="skills" class="background-alt">
         <h2 class="heading">Skills</h2>
         <ul>
-            <circle-progress
-                [percent]="90"
+            <li><circle-progress
+                [percent]="85"
                 [radius]="50"
                 [title]="'English'"
-                [titleFontSize]="'small'"
+                [titleFontSize]="'1em'"
                 [showUnits]="false"
-                [subtitle]="'90/100'"
-                [subtitleFontSize]="'small'"
-                [outerStrokeWidth]="6"
-                [innerStrokeWidth]="2"
+                [subtitle]="'C2'"
+                [subtitleFontSize]="'medium'"
+                [subtitleFontWeight]="'heavy'"
+                [outerStrokeWidth]="8"
+                [innerStrokeWidth]="1"
+                [subtitleColor]="'#000000'"
+                [outerStrokeColor]="'#74808a'"
+                [innerStrokeColor]="'#74808a'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress>
+            <li><circle-progress
+                [percent]="80"
+                [radius]="50"
+                [imageSrc]="'../../../assets/htmlicon.png'"
+                [showImage]="true"
+                [imageHeight]="40"
+                [imageWidth]="35"
+                [showUnits]="false"
+                [outerStrokeWidth]="8"
+                [innerStrokeWidth]="1"
                 [subtitleColor]="'#74808a'"
                 [outerStrokeColor]="'#74808a'"
                 [innerStrokeColor]="'#74808a'"
                 [animation]="true"
                 [animationDuration]="300"
             ></circle-progress>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            </li>     
+            <li><circle-progress
+                [percent]="75"
+                [radius]="50"
+                [imageSrc]="'../../../assets/cssicon.png'"
+                [showImage]="true"
+                [imageHeight]="40"
+                [imageWidth]="35"
+                [showUnits]="false"
+                [outerStrokeWidth]="8"
+                [innerStrokeWidth]="1"
+                [subtitleColor]="'#74808a'"
+                [outerStrokeColor]="'#74808a'"
+                [innerStrokeColor]="'#74808a'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress></li>
+            <li><circle-progress
+                [percent]="70"
+                [radius]="50"
+                [imageSrc]="'../../../assets/jsicon.png'"
+                [showImage]="true"
+                [imageHeight]="50"
+                [imageWidth]="50"
+                [showUnits]="false"
+                [outerStrokeWidth]="8"
+                [innerStrokeWidth]="1"
+                [subtitleColor]="'#74808a'"
+                [outerStrokeColor]="'#74808a'"
+                [innerStrokeColor]="'#74808a'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress></li>
+            <li id="icongit"><circle-progress
+                [percent]="80"
+                [radius]="50"
+                [imageSrc]="'../../../assets/git.png'"
+                [showImage]="true"
+                [imageHeight]="50"
+                [imageWidth]="50"
+                [showUnits]="false"
+                [outerStrokeWidth]="8"
+                [innerStrokeWidth]="1"
+                [subtitleColor]="'#74808a'"
+                [outerStrokeColor]="'#74808a'"
+                [innerStrokeColor]="'#74808a'"
+                [animation]="true"
+                [animationDuration]="300"
+            ></circle-progress></li>
         </ul>
     </div>
 </div>
