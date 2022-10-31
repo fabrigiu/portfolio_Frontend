@@ -4,7 +4,8 @@
             <img src="../../../assets/APLogo.png" id="logoAP">
         </div>
         <div id="login">
-            <button type="button" class="btn btn-outline-light" (click)="login()">Log In</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Log In</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>
         </div>
     </div>
 </div>
