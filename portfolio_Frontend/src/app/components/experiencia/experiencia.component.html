@@ -1,29 +1,23 @@
 <div class="row">
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experiencia Laboral</h2>
+        <h2 class="heading">Experience</h2>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                Add Experience
+            </button>
+        </div>
         <div id="experience-timeline">
-            <div>
-                <h3>Empleador</h3>
-                <h4>Trabajo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-    
-            <div>
-                <h3>Empleador</h3>
-                <h4>Trabajo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-    
-            <div>
-                <h3>Empleador</h3>
-                <h4>Trabajo</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+            <div *ngFor="let Experiencia of expe">
+                <h3>{{Experiencia.nombreE}}</h3>
+                <p>{{Experiencia.descripcionE}}</p>
+                <div *ngIf="isLogged">
+                    <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
+                        <i class="bi bi-pencil"></i> Edit
+                    </button>
+                    <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash3-fill"></i> Delete
+                    </button>
+                </div>
             </div>
         </div>
     </div>
