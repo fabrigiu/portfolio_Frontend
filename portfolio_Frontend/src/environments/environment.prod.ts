@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'http://backendfsg.herokuapp.com/'
+  URL: 'https://backendfsg.herokuapp.com/'
 };

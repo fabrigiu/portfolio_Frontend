@@ -1,5 +1,5 @@
 export const environment = {
 
   production: false,
-  URL: 'http://backendfsg.herokuapp.com/'
+  URL: 'https://backendfsg.herokuapp.com/'
 };
