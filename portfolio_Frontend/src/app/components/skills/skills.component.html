@@ -1,89 +1,40 @@
 <div class="row">
     <div id="skills" class="background-alt">
         <h2 class="heading">Skills</h2>
-        <ul>
-            <li><circle-progress
-                [percent]="85"
-                [radius]="50"
-                [title]="'English'"
-                [titleFontSize]="'1em'"
-                [showUnits]="false"
-                [subtitle]="'C2'"
-                [subtitleFontSize]="'medium'"
-                [subtitleFontWeight]="'heavy'"
-                [outerStrokeWidth]="8"
-                [innerStrokeWidth]="1"
-                [subtitleColor]="'#000000'"
-                [outerStrokeColor]="'#74808a'"
-                [innerStrokeColor]="'#74808a'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress>
-            <li><circle-progress
-                [percent]="80"
-                [radius]="50"
-                [imageSrc]="'../../../assets/htmlicon.png'"
-                [showImage]="true"
-                [imageHeight]="40"
-                [imageWidth]="35"
-                [showUnits]="false"
-                [outerStrokeWidth]="8"
-                [innerStrokeWidth]="1"
-                [subtitleColor]="'#74808a'"
-                [outerStrokeColor]="'#74808a'"
-                [innerStrokeColor]="'#74808a'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress>
-            </li>     
-            <li><circle-progress
-                [percent]="75"
-                [radius]="50"
-                [imageSrc]="'../../../assets/cssicon.png'"
-                [showImage]="true"
-                [imageHeight]="40"
-                [imageWidth]="35"
-                [showUnits]="false"
-                [outerStrokeWidth]="8"
-                [innerStrokeWidth]="1"
-                [subtitleColor]="'#74808a'"
-                [outerStrokeColor]="'#74808a'"
-                [innerStrokeColor]="'#74808a'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress></li>
-            <li><circle-progress
-                [percent]="70"
-                [radius]="50"
-                [imageSrc]="'../../../assets/jsicon.png'"
-                [showImage]="true"
-                [imageHeight]="50"
-                [imageWidth]="50"
-                [showUnits]="false"
-                [outerStrokeWidth]="8"
-                [innerStrokeWidth]="1"
-                [subtitleColor]="'#74808a'"
-                [outerStrokeColor]="'#74808a'"
-                [innerStrokeColor]="'#74808a'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress></li>
-            <li id="icongit"><circle-progress
-                [percent]="80"
-                [radius]="50"
-                [imageSrc]="'../../../assets/git.png'"
-                [showImage]="true"
-                [imageHeight]="50"
-                [imageWidth]="50"
-                [showUnits]="false"
-                [outerStrokeWidth]="8"
-                [innerStrokeWidth]="1"
-                [subtitleColor]="'#74808a'"
-                [outerStrokeColor]="'#74808a'"
-                [innerStrokeColor]="'#74808a'"
-                [animation]="true"
-                [animationDuration]="300"
-            ></circle-progress></li>
-        </ul>
+        <div class="col-lg-2">
+            <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">New Skill</button>
+        </div>
+        <div>
+            <ul>
+                <li *ngFor="let skill of skill">
+                    <circle-progress 
+                    [percent]="(skill.porcentaje)" 
+                    [radius]="90" [imageSrc]="''"
+                    [title]="(skill.nombre)" 
+                    [titleColor]="'#212F3C'" 
+                    [showTitle]="true" 
+                    [showImage]="false"
+                    [imageHeight]="70" 
+                    [imageWidth]="70" 
+                    [showUnits]="false" 
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16" 
+                    [innerStrokeWidth]="2" 
+                    [outerStrokeColor]="'#78C000'"
+                    [innerStrokeColor]="'#C7E596'" 
+                    [animation]="true" 
+                    [animationDuration]="600">
+                    </circle-progress>
+                    <div *ngIf="isLogged">
+                        <button class="btn btn-dark" routerLink="/editskill/{{skill.id}}">
+                            <i class="bi bi-pencil"></i> Edit
+                        </button>
+                        <button class="btn btn-danger" (click)="delete(skill.id)">
+                            <i class="bi bi-trash3-fill"></i> Delete
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

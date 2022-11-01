@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Experiencia } from '../model/experiencia';
 
 @Injectable({
@@ -8,7 +9,8 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  expURL = 'https://backendfsg.herokuapp.com/explab/';
+  expURL = environment.URL +  'explab/';
+  //expURL = 'http://localhost:8080/';
 
   constructor(private httpClient: HttpClient) { }
 
