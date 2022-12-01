@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'https://backendfsg.herokuapp.com/'
+  URL: 'portfoliobackend-production-121c.up.railway.app'
 };
